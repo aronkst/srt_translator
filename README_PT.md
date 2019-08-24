@@ -8,10 +8,10 @@ Este é um simples tradutor de legendas do tipo SRT.
 
 ## Argumentos
 
-1°: Arquivo SRT para traduzir.
-2°: Idioma do arquivo SRT.
-3°: Idioma em que o arquivo deve ser traduzido.
-4°: O arquivo SRT traduzido.
+- 1°: Arquivo SRT para traduzir.
+- 2°: Idioma do arquivo SRT.
+- 3°: Idioma em que o arquivo deve ser traduzido.
+- 4°: O arquivo SRT traduzido.
 
 ## Idiomas Disponíveis
 
