@@ -8,10 +8,10 @@ You need to clone this repository on your machine, install Python, install the d
 
 ## Arguments
 
-1st: SRT file to translate.
-2nd: Language of the SRT file.
-3rd: Language in which the SRT file must be translated.
-4th: The translated SRT file.
+- 1st: SRT file to translate.
+- 2nd: Language of the SRT file.
+- 3rd: Language in which the SRT file must be translated.
+- 4th: The translated SRT file.
 
 ## Available Languages
 
