@@ -131,9 +131,12 @@ Source: [https://py-googletrans.readthedocs.io/en/latest/#googletrans-languages]
 
 ## Example
 
-`git clone srt_translator`
+`git clone https://github.com/aronkst/srt_translator.git`
+
 `cd srt_translator`
+
 `pip install -r requirements.txt`
+
 `python srt_translator.py "file.srt" "en" "pt" "translated_file.srt"`
 
 ## Instruções em Português
