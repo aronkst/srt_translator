@@ -8,10 +8,10 @@ Este é um simples tradutor de legendas do tipo SRT.
 
 ## Argumentos
 
-1°: Arquivo SRT para traduzir.
-2°: Idioma do arquivo SRT.
-3°: Idioma em que o arquivo deve ser traduzido.
-4°: O arquivo SRT traduzido.
+- 1°: Arquivo SRT para traduzir.
+- 2°: Idioma do arquivo SRT.
+- 3°: Idioma em que o arquivo deve ser traduzido.
+- 4°: O arquivo SRT traduzido.
 
 ## Idiomas Disponíveis
 
@@ -131,9 +131,12 @@ Fonte: [https://py-googletrans.readthedocs.io/en/latest/#googletrans-languages](
 
 ## Exemplo
 
-`git clone srt_translator`
+`git clone https://github.com/aronkst/srt_translator.git`
+
 `cd srt_translator`
+
 `pip install -r requirements.txt`
+
 `python srt_translator.py "file.srt" "en" "pt" "translated_file.srt"`
 
 ## English Instructions

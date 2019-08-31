@@ -8,10 +8,10 @@ You need to clone this repository on your machine, install Python, install the d
 
 ## Arguments
 
-1st: SRT file to translate.
-2nd: Language of the SRT file.
-3rd: Language in which the SRT file must be translated.
-4th: The translated SRT file.
+- 1st: SRT file to translate.
+- 2nd: Language of the SRT file.
+- 3rd: Language in which the SRT file must be translated.
+- 4th: The translated SRT file.
 
 ## Available Languages
 
@@ -131,9 +131,12 @@ Source: [https://py-googletrans.readthedocs.io/en/latest/#googletrans-languages]
 
 ## Example
 
-`git clone srt_translator`
+`git clone https://github.com/aronkst/srt_translator.git`
+
 `cd srt_translator`
+
 `pip install -r requirements.txt`
+
 `python srt_translator.py "file.srt" "en" "pt" "translated_file.srt"`
 
 ## Instruções em Português
