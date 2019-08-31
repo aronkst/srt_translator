@@ -1,6 +1,7 @@
 import sys
 import srt
 from googletrans import Translator
+from googletrans import LANGUAGES
 
 if len(sys.argv) != 5:
 	print('Invalid arguments.')
@@ -14,6 +15,11 @@ srt_to_translate = sys.argv[1]
 original_language = sys.argv[2]
 language_to_translate = sys.argv[3]
 srt_translated = sys.argv[4]
+
+if original_language not in LANGUAGES.keys() or language_to_translate not in LANGUAGES.keys():
+	print('Invalid arguments.')
+	print('  The language of the SRT file or the language in which the SRT file must be translated are invalid or language is not supported.')
+	exit()
 
 file = open(srt_to_translate, mode='r', encoding='utf-8')
 subtitle = file.read()
