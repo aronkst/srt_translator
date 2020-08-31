@@ -30,32 +30,32 @@ file.close()
 
 sub = srt.parse(subtitle)
 
-sub_5000 = []
+sub_n = []
 sub_content = ''
 
 for s in list(sub):
     s_content = s.content.replace('\n', ' ')
 
-    if len(sub_content) + len(s_content) + len('\n') >= 5000:
-        sub_5000.append(sub_content[0:-1])
+    if len(sub_content) + len(s_content) + len('\n') >= 2500:
+        sub_n.append(sub_content[0:-1])
         sub_content = ''
 
     sub_content += s_content + '\n'
 
-sub_5000.append(sub_content[0:-1])
+sub_n.append(sub_content[0:-1])
 
-sub_5000_translated = []
+sub_n_translated = []
 translator = Translator()
 
-for s in sub_5000:
+for s in sub_n:
     s_translated = translator.translate(s, src=original_language,
                                         dest=language_to_translate)
-    sub_5000_translated.append(s_translated.text)
+    sub_n_translated.append(s_translated.text)
     print('.')
 
 sub_translated = []
 
-for s in sub_5000_translated:
+for s in sub_n_translated:
     sub_translated.extend(s.split('\n'))
 
 sub = srt.parse(subtitle)
